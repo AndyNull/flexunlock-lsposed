@@ -30,9 +30,9 @@ class DisplayIdHook : IXposedHookLoadPackage {
 
         // v0.3.0: 只 hook 这些 App（精确控制，不 hook 所有 App）
         // 安全文件夹 + 其他可能检测 displayId 的 App
+        // v0.3.2: 安全文件夹运行在 Knox 容器 (user 150)，LSPosed 无法 hook
+        // 从白名单移除避免内屏闪退
         private val TARGET_APPS = setOf(
-            "com.samsung.knox.securefolder",           // 安全文件夹（正确包名，没有 android）
-            "com.samsung.android.knox.securefolder",    // 兼容旧版
             "com.android.settings",
             "com.samsung.android.app.contacts",
             "com.sec.android.app.myfiles",
