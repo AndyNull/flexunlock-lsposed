@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="xposed_scope">
+        <item>android</item>
+        <item>com.android.systemui</item>
+        <item>com.samsung.android.knox.securefolder</item>
+        <item>com.android.settings</item>
+        <item>com.samsung.android.app.contacts</item>
+        <item>com.sec.android.app.myfiles</item>
+    </string-array>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Hook 作用域：所有 App
+        这样任何 App 调用 Display.getDisplayId() 都会被 hook
+        但 hook 逻辑会判断：只在 display 1 上运行时才篡改
+    -->
+    <string-array name="xposed_scope">
+        <item>android</item>
+        <item>com.android.systemui</item>
+        <item>com.samsung.android.knox.securefolder</item>
+        <item>com.android.settings</item>
+        <item>com.samsung.android.app.contacts</item>
+        <item>com.sec.android.app.myfiles</item>
+    </string-array>
+</resources>

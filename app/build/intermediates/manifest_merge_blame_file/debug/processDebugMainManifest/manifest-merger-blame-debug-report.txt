@@ -1,0 +1,49 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.flexunlock.lsposed"
+4    android:versionCode="2"
+5    android:versionName="0.2.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="31"
+9        android:targetSdkVersion="34" />
+10
+11    <application
+11-->/home/z/my-project/download/flexunlock-lsposed/app/src/main/AndroidManifest.xml:5:5-16:19
+12        android:allowBackup="false"
+12-->/home/z/my-project/download/flexunlock-lsposed/app/src/main/AndroidManifest.xml:6:9-36
+13        android:debuggable="true"
+14        android:extractNativeLibs="false"
+15        android:icon="@android:drawable/sym_def_app_icon"
+15-->/home/z/my-project/download/flexunlock-lsposed/app/src/main/AndroidManifest.xml:7:9-58
+16        android:label="FlexUnlock Hook"
+16-->/home/z/my-project/download/flexunlock-lsposed/app/src/main/AndroidManifest.xml:8:9-40
+17        android:theme="@android:style/Theme.DeviceDefault" >
+17-->/home/z/my-project/download/flexunlock-lsposed/app/src/main/AndroidManifest.xml:9:9-59
+18        <meta-data
+18-->/home/z/my-project/download/flexunlock-lsposed/app/src/main/AndroidManifest.xml:12:9-71
+19            android:name="xposedmodule"
+19-->/home/z/my-project/download/flexunlock-lsposed/app/src/main/AndroidManifest.xml:12:20-47
+20            android:value="true" />
+20-->/home/z/my-project/download/flexunlock-lsposed/app/src/main/AndroidManifest.xml:12:48-68
+21        <meta-data
+21-->/home/z/my-project/download/flexunlock-lsposed/app/src/main/AndroidManifest.xml:13:9-120
+22            android:name="xposeddescription"
+22-->/home/z/my-project/download/flexunlock-lsposed/app/src/main/AndroidManifest.xml:13:20-52
+23            android:value="Hook Display ID to bypass cover screen detection" />
+23-->/home/z/my-project/download/flexunlock-lsposed/app/src/main/AndroidManifest.xml:13:53-117
+24        <meta-data
+24-->/home/z/my-project/download/flexunlock-lsposed/app/src/main/AndroidManifest.xml:14:9-73
+25            android:name="xposedminversion"
+25-->/home/z/my-project/download/flexunlock-lsposed/app/src/main/AndroidManifest.xml:14:20-51
+26            android:value="93" />
+26-->/home/z/my-project/download/flexunlock-lsposed/app/src/main/AndroidManifest.xml:14:52-70
+27        <meta-data
+27-->/home/z/my-project/download/flexunlock-lsposed/app/src/main/AndroidManifest.xml:15:9-88
+28            android:name="xposedscope"
+28-->/home/z/my-project/download/flexunlock-lsposed/app/src/main/AndroidManifest.xml:15:20-46
+29            android:resource="@array/xposed_scope" />
+29-->/home/z/my-project/download/flexunlock-lsposed/app/src/main/AndroidManifest.xml:15:47-85
+30    </application>
+31
+32</manifest>
