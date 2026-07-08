@@ -8,18 +8,18 @@
                     "from": {
                         "startLines": "7",
                         "startColumns": "4",
-                        "startOffsets": "190",
-                        "endLines": "14",
+                        "startOffsets": "193",
+                        "endLines": "22",
                         "endColumns": "19",
-                        "endOffsets": "519"
+                        "endOffsets": "939"
                     },
                     "to": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
-                        "endLines": "9",
+                        "endLines": "17",
                         "endColumns": "19",
-                        "endOffsets": "384"
+                        "endOffsets": "801"
                     }
                 }
             ]
@@ -33,17 +33,17 @@
                         "startLines": "7",
                         "startColumns": "4",
                         "startOffsets": "193",
-                        "endLines": "22",
+                        "endLines": "23",
                         "endColumns": "19",
-                        "endOffsets": "939"
+                        "endOffsets": "990"
                     },
                     "to": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
-                        "endLines": "17",
+                        "endLines": "18",
                         "endColumns": "19",
-                        "endOffsets": "801"
+                        "endOffsets": "852"
                     }
                 }
             ]
