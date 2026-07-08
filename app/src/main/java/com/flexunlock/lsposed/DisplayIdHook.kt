@@ -26,24 +26,30 @@ class DisplayIdHook : IXposedHookLoadPackage {
 
     companion object {
         private const val TAG = "FlexUnlock-Hook"
-
-        // 主 App 写入的标志文件，表示当前处于外屏模式
         private const val COVER_MODE_FILE = "/data/local/tmp/flexunlock_cover_mode"
 
-        // 不 hook 的系统 App（防止系统崩溃）
-        private val SYSTEM_APPS = setOf(
-            "com.android.systemui",
-            "com.android.phone",
+        // v0.3.0: 只 hook 这些 App（精确控制，不 hook 所有 App）
+        // 安全文件夹 + 其他可能检测 displayId 的 App
+        private val TARGET_APPS = setOf(
+            "com.samsung.android.knox.securefolder",
             "com.android.settings",
-            "android",
-            "com.flexunlock.simple",
-            "com.flexunlock.lsposed",
+            "com.samsung.android.app.contacts",
+            "com.sec.android.app.myfiles",
+            "com.samsung.android.messaging",
+            "com.samsung.android.dialer",
+            "com.sec.android.app.camera",
+            "com.sec.android.app.samsungapps",
+            "com.sec.android.gallery3d",
+            "com.sec.android.app.clockpackage",
+            "com.sec.android.app.popupcalculator",
+            "com.samsung.android.calendar",
+            "com.samsung.android.app.notes",
         )
     }
 
     override fun handleLoadPackage(lpparam: LoadPackageParam) {
-        // 不 hook 系统关键 App
-        if (lpparam.packageName in SYSTEM_APPS) return
+        // v0.3.0: 白名单模式——只 hook 指定的 App
+        if (lpparam.packageName !in TARGET_APPS) return
 
         XposedBridge.log("[$TAG] Loading hook for: ${lpparam.packageName}")
 

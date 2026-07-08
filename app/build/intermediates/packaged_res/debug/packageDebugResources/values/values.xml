@@ -2,10 +2,18 @@
 <resources>
     <string-array name="xposed_scope">
         <item>android</item>
-        <item>com.android.systemui</item>
         <item>com.samsung.android.knox.securefolder</item>
         <item>com.android.settings</item>
         <item>com.samsung.android.app.contacts</item>
         <item>com.sec.android.app.myfiles</item>
+        <item>com.samsung.android.messaging</item>
+        <item>com.samsung.android.dialer</item>
+        <item>com.sec.android.app.camera</item>
+        <item>com.sec.android.app.samsungapps</item>
+        <item>com.sec.android.gallery3d</item>
+        <item>com.sec.android.app.clockpackage</item>
+        <item>com.sec.android.app.popupcalculator</item>
+        <item>com.samsung.android.calendar</item>
+        <item>com.samsung.android.app.notes</item>
     </string-array>
 </resources>

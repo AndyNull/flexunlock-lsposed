@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.flexunlock.lsposed.app-mergeDebugResources-2:/values/values.xml",
+            "outputFile": "/home/z/.gradle/daemon/8.9/com.flexunlock.lsposed.app-mergeDebugResources-2:/values/values.xml",
             "map": [
                 {
                     "source": "/home/z/my-project/download/flexunlock-lsposed/app/src/main/res/values/arrays.xml",
@@ -20,6 +20,30 @@
                         "endLines": "9",
                         "endColumns": "19",
                         "endOffsets": "384"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.flexunlock.lsposed.app-mergeDebugResources-2:/values/values.xml",
+            "map": [
+                {
+                    "source": "/home/z/my-project/download/flexunlock-lsposed/app/src/main/res/values/arrays.xml",
+                    "from": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "193",
+                        "endLines": "22",
+                        "endColumns": "19",
+                        "endOffsets": "939"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "17",
+                        "endColumns": "19",
+                        "endOffsets": "801"
                     }
                 }
             ]

@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--
-        Hook 作用域：所有 App
-        这样任何 App 调用 Display.getDisplayId() 都会被 hook
-        但 hook 逻辑会判断：只在 display 1 上运行时才篡改
+        v0.3.0: 作用域设为 system framework（android）
+        LSPosed 会加载到所有 App，但模块代码用白名单过滤
+        只 hook TARGET_APPS 中的 App
     -->
     <string-array name="xposed_scope">
         <item>android</item>
-        <item>com.android.systemui</item>
         <item>com.samsung.android.knox.securefolder</item>
         <item>com.android.settings</item>
         <item>com.samsung.android.app.contacts</item>
         <item>com.sec.android.app.myfiles</item>
+        <item>com.samsung.android.messaging</item>
+        <item>com.samsung.android.dialer</item>
+        <item>com.sec.android.app.camera</item>
+        <item>com.sec.android.app.samsungapps</item>
+        <item>com.sec.android.gallery3d</item>
+        <item>com.sec.android.app.clockpackage</item>
+        <item>com.sec.android.app.popupcalculator</item>
+        <item>com.samsung.android.calendar</item>
+        <item>com.samsung.android.app.notes</item>
     </string-array>
 </resources>
